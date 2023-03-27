@@ -12,7 +12,7 @@ public class Pessoa {
 	}
 	
 	public Pessoa(String nome, Integer ano, Integer mes, Integer dia, String rg, String cpf) {
-		this.nome = "";
+		this.nome = nome;
 		this.nascimento = LocalDate.of(ano, mes, dia);
 		this.identidade = new CarteiraIdentidade(rg, cpf);
 	}
